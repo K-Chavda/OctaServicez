@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Component/Navbar';
+import About from './Component/About';
+import Services from './Component/Services';
+import Blog from "./Component/Blog";
+import Hero from './Component/Hero';
+import Contact from './Component/Contact';
 
-function App() {
+
+//   var target = document.querySelector('nav-icon3');
+//   target.addEventListener('click',()=>{
+//     alert('');
+//   })
+//   if(target != null){
+//   if (target.classList.contains('open')) {
+//     target.classList.remove('open');
+//   } else {
+//     target.classList.add('open');
+//   }
+// }
+  function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section>
+        <Navbar />
+      </section>
+      <section>
+        <Hero/>
+      </section>
+      <section>
+        <Services/>
+      </section>  
+      <section>
+        <About/>
+      </section>
+      {/* <section>
+        <Login/>
+      </section> */}
+      <section>
+        <Blog/>
+      </section>
+      <section>
+        <Contact/>
+      </section>
+    </>
   );
 }
 

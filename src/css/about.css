@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&family=Inconsolata:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inconsolata:wght@400;500&display=swap');
+      
+
+/* @media only screen and (min-width: 750px) { */
+
+  .aboutMainContainer{
+    padding:10% 10px;
+    background-color: aliceblue;
+  }
+
+.about__mainContainer{
+  width: 100%;
+  /* margin: 10px; */
+  border-radius: 10px;
+    box-shadow: 2px 2px 40px rgb(0 0 0 / 25%);
+  /* margin-top: 10%; */
+  background-color: white;
+}
+
+.about__container{
+  width: 100%;
+  display: flex;
+}
+
+.about__imgContainer{
+  width: auto;
+  padding: 10px;
+  border: 10px solid orange;
+  border-radius: 10px;
+    box-shadow: 2px 2px 40px rgb(0 0 0 / 25%);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin: 10px;
+}
+
+.about__img{
+  width: 320px;
+  height: 400px;
+  margin-right: 1px;
+  margin-bottom: -2px;
+  
+}
+
+.about__rightContainer{
+  width: 100%;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.about__Heading{
+  text-align: left;
+}
+
+.about__pTag{
+  text-align: justify;
+  line-height: 25px;
+    font-size: 18px;
+    /* line-height: 35px; */
+    margin-top: 20px; 
+}
+
+.about__pTag>h3{
+  margin-top: 20px;
+}
+
+.about__pTag>ul{
+  list-style: url('https://cdn-icons-png.flaticon.com/32/556/556701.png');
+  margin-left: 35px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+.about__pTag>ul>li{
+  padding-left: 15px;
+}
+
+.about__headerContainer{
+  font-size: 40px;
+}
+
+/* } */
+
+@media only screen and (max-width: 750px) {
+  .about__mainContainer{
+    width: 100%;
+    margin-top: 20%;
+  }
+  
+  .about__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+    padding-right: 15px;
+  }
+  
+  .about__imgContainer{
+    width: 100%;
+    border: 10px solid orange;
+  }
+  
+  .about__img{
+    width: 80%;
+    height: 40%;
+  }
+  
+  .about__rightContainer{
+    width: 100%;
+    text-align: left;
+    padding: 0px 20px;
+  }
+  
+  .about__Heading{
+    text-align: left;
+  }
+  
+  .about__pTag{
+    text-align: justify;
+    font-size: 24px;
+    /* line-height: 35px; */
+    margin-top: 30px;
+  }
+
+  .about__headerContainer{
+    margin-top: 30px;
+  }
+  
+  .about__pTag>h3{
+    margin-top: 30px;
+  }
+
+  .about__pTag>ul{
+    list-style: url('https://cdn-icons-png.flaticon.com/32/556/556701.png');
+    margin-left: 35px;
+    line-height: 60px;
+  }
+
+  .about__pTag>ul>li{
+    padding-left: 15px;
+  }
+
+  .about__headerContainer{
+    font-size: 40px;
+  }
+}

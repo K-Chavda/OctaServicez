@@ -1,0 +1,243 @@
+@media only screen and (min-width: 750px) {
+.services__Container{
+    height: fit-content;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10%;
+}
+
+.service__pTag, .service__H3{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 35px;
+    margin: 5px;
+}
+
+.services__Header{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+
+.services__Card{
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    width: fit-content;
+}
+
+.services__BottomDetails{
+    padding: 10px;
+    width: 100%;
+}
+
+.services__Card{
+    width: auto;
+    height: 300px;
+    justify-content: space-evenly;
+    
+}
+
+.service__detailCard{
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px rgb(0 0 0 / 25%);
+    transition: .6s ease;
+    margin: 20px;
+}
+
+.service__detailCard:hover{
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 2px 2px 40px rgb(0 0 0 / 25%);
+    scale: 1.1;
+    transition: .6s ease;
+}
+
+.card__Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__Img{
+    height: 60px;
+    width: 60px;
+}
+
+a{
+    color: crimson;
+    text-decoration: none;
+}
+
+.services__BottomDetails{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom__detailHolder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail__Heading {
+    margin: 10px;
+}
+
+.detail__moreDetails{
+    margin: 10px;
+}
+
+.detail__moreDetails{
+    line-height: 2px;
+}
+
+.service__H1{
+    font-size: 60px;
+    color: rgb(136, 132, 168);
+}
+
+h2{
+    font-size: 30px;
+}
+
+.headerWrap{
+    margin-left: 80px;
+}
+
+.navbar__LogoWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    margin-right: 10px;
+}
+}
+
+@media only screen and (max-width: 750px) {
+    .services__Container{
+        height: fit-content;
+        /* padding: 20px; */
+        font-size: x-large;
+        background-color: rgb(255, 255, 255);
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .service__pTag{
+        text-align: justify;
+        font-size: 24px;
+        /* line-height: 35px; */
+        margin-top: 30px;
+    }
+
+    .services__Header{
+        /* display: flex; */
+        padding: 10px;
+        /* width: 100%; */
+    }
+    
+    .services__Card{
+        /* display: flex; */
+        padding: 10px;
+        height: 100%;
+        width: fit-content;
+    }
+    
+    .services__BottomDetails{
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .services__Card{
+        width: auto;
+        /* height: 300px; */
+        justify-content: space-evenly;
+        
+    }
+    
+    .service__detailCard{
+        padding: 20px;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 2px 2px 40px rgb(0 0 0 / 25%);
+        transition: .6s ease;
+        margin: 20px;
+    }
+    
+    .service__detailCard:hover{
+        padding: 20px;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 2px 2px 40px rgb(0 0 0 / 25%);
+        scale: 1.1;
+        transition: .6s ease;
+    }
+    
+    .card__Header{
+        /* display: flex; */
+        justify-content: space-between;
+    }
+    
+    .card__Img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    a{
+        color: crimson;
+        text-decoration: none;
+    }
+    
+    .services__BottomDetails{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .bottom__detailHolder{
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .detail__Heading {
+        margin: 10px;
+    }
+    
+    .detail__moreDetails{
+        margin: 10px;
+    }
+    
+    .detail__moreDetails{
+        line-height: 2px;
+    }
+    
+    .service__H1{
+        font-size: 60px;
+        color: rgb(136, 132, 168);
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    .navbar__LogoWrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    img{
+        margin-right: 10px;
+    }
+}
