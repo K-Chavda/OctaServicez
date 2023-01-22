@@ -16,10 +16,11 @@ export default class About extends PureComponent {
               </div>
             </div>
             <div className="about__rightContainer">
-              <h1 className="about__headerContainer">About Us</h1>
-              <p className='about__pTag'> Octa Servicez is an Indian company providing mainly software designing services to the SME's to ease their day-to-day operations. We are using most trending technologies to meet the client requirement. We are transforming these industries to the digital world for that ease. 
-              <h3>Our Vision</h3> We want to take the Octa Servicez to the highest for achieving the best digital solution provider at the local & PAN India level. In our work culture we are doing all the operations very intenlligently and in in a focused manner. We always give optimum priority to the client requirement. At Octa Servicez we are always look for providing masterpiece in everything.
-              <h3>Currently Serving Industries</h3> <ul><li>Commercial</li><li>SME's</li></ul></p>
+              <h1>About Us</h1>
+              <p className='about__pTag'> Octa Servicez is an Indian company providing mainly software designing services to the SME's to ease their day-to-day operations. We are using most trending technologies to meet the client requirement. We are transforming these industries to the digital world for that ease. </p>
+              <h3>Our Vision</h3> 
+              <p className='about__pTag'>We want to take the Octa Servicez to the highest for achieving the best digital solution provider at the local & PAN India level. In our work culture we are doing all the operations very intenlligently and in in a focused manner. We always give optimum priority to the client requirement. At Octa Servicez we are always look for providing masterpiece in everything.</p>
+              <h3>Currently Serving Industries</h3> <ul className='navbarUL'><li>Commercial</li><li>SME's</li></ul>
             </div>
           </div>
         </div>

@@ -425,6 +425,7 @@
     font-size: 1.15rem;
     line-height: 1.7rem;
     padding-bottom: 2rem;
+    text-align: justify;
   }
   
   @media all and (max-width: 1200px) {
@@ -458,7 +459,7 @@
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 100%;
     }
   
     .card-box {
@@ -488,5 +489,6 @@
   
     .card-description {
       font-size: 1rem;
+      text-align: justify;
     }
   }

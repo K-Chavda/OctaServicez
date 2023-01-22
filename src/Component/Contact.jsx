@@ -1,43 +1,120 @@
-import React, { PureComponent } from 'react';
-import '../css/contact.css';
+import React from "react";
+import "../css/contact.css";
+import emailjs from "@emailjs/browser";
 
-export default class Contact extends PureComponent {
-  
-  render() {
-    return (
-      <>
-        <div id="contactMainContainer" className="contactMainContainer">
-          <div class="contact-container">
-            <div class="left-col">
-              {/* <img class="logo" src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png" alt=""/> */}
-            </div>
-            <div class="right-col">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input className='contact-input' type="checkbox" id="checkbox" />
-                  <div class="slider round"></div>
-                </label>
-                <div class="description">Dark Mode</div>
+export default function Contact() {
+  return (
+    <>
+      <section className="contact_wrapper" id="contactMainContainer">
+        <div className="contact_info">
+          <h3 className="title">Contact Info</h3>
+          <ul className="icons_wrapp">
+            <li>
+              <div className="icon">
+                <span className="material-icons-outlined"> place </span>
+              </div>
+              <div className="text">
+                4, Nutan Shaktinagar SOC, Nr. Old Aradhna School Cross Road,
+                Maninagar, Ahemdabad 380008
+              </div>
+            </li>
+            <li>
+              <div className="icon">
+                <span className="material-icons-outlined"> mail_outline </span>
+              </div>
+              <div className="text">Octa.servicez@gmail.com</div>
+            </li>
+            {/* <li>
+              <div className="icon">
+                <span className="material-icons-outlined"> phone_in_talk </span>
+              </div>
+              <div className="text">
+                123-456-789
+              </div>
+            </li> */}
+          </ul>
+        </div>
+
+        <div className="contact_msg">
+          <h3 className="title">Send a Message</h3>
+          <form id="form">
+            <div className="form_fild">
+              <div className="input_group w_50">
+                <input type="text" className="input" required id="Fname" />
+                <label className="placeholder">First Name</label>
               </div>
 
-              <h1 className='contact-h1'>Contact us</h1>
-              <p className='contact-pTag'>Planning to visit Indonesia soon? Get insider tips on where to go, things to do and find best deals for your next adventure.</p>
+              <div className="input_group w_50">
+                <input type="text" className="input" required id="Lname" />
+                <label className="placeholder">Last Name</label>
+              </div>
 
-              <form id="contact-form" method="post">
-                <label for="name">Full name</label>
-                <input className='contact-input' type="text" id="name" name="name" placeholder="Your Full Name" required/>
-                <label for="email">Email Address</label>
-                <input className='contact-input' type="email" id="email" name="email" placeholder="Your Email Address" required/>
-                <label for="message">Message</label>
-                <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
-                <button type="submit" id="submit" name="submit">Send</button>
-              </form>
-              <div id="error"></div>
-              <div id="success-msg"></div>
+              <div className="input_group w_50">
+                <input type="text" className="input" required id="MailID" />
+                <label className="placeholder">Emal Address</label>
+              </div>
+
+              <div className="input_group w_50">
+                <input type="tel" className="input" required id="PhoneNO" />
+                <label className="placeholder">Mobile Number</label>
+              </div>
+
+              <div className="input_group w_100">
+                <textarea
+                  className="input input_textarea "
+                  rows="6"
+                  required
+                  id="EQRMessage"
+                ></textarea>
+                <label className="placeholder textarea">
+                  Write your message here...
+                </label>
+              </div>
+
+              <div className="input_group">
+                <input
+                  type="submit"
+                  className="btn"
+                  id="button"
+                  value="Send Email"
+                ></input>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-      </>
-    )
-  }
+      </section>
+    </>
+  );
+}
+
+emailjs.init("68H9HdHkizlk2mfRs");
+const btn = document.getElementById("button");
+var formVar = document.getElementById("form");
+
+if (btn) {
+  formVar.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    btn.value = "Sending...";
+
+    const serviceID = "service_dlj9c2u";
+    const templateID = "template_x5h6xcp";
+
+    emailjs
+      .send(serviceID, templateID, {
+        Fname: document.getElementById("Fname").value,
+        Lname: document.getElementById("Lname").value,
+        MailID: document.getElementById("MailID").value,
+        PhoneNO: document.getElementById("PhoneNO").value,
+        EQRMessage: document.getElementById("EQRMessage").value,
+      })
+      .then(
+        () => {
+          btn.value = "Send Email";
+        },
+        () => {
+          btn.value = "Send Email";
+        }
+      );
+  });
 }

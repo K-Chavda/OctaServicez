@@ -6,17 +6,6 @@ import Hero from './Component/Hero';
 import Contact from './Component/Contact';
 
 
-//   var target = document.querySelector('nav-icon3');
-//   target.addEventListener('click',()=>{
-//     alert('');
-//   })
-//   if(target != null){
-//   if (target.classList.contains('open')) {
-//     target.classList.remove('open');
-//   } else {
-//     target.classList.add('open');
-//   }
-// }
   function App() {
   return (
     <>

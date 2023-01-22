@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/services.css';
-// import image from '../Images/Only_Logo.png';
 import web_img from '../Images/web-design.png';
 import db_img from '../Images/server.png';
 import gfx_img from '../Images/coding.png';
@@ -20,7 +19,6 @@ export default function Services() {
                             <img className="card__Img" src={web_img} alt="" />
                         </div>
                         <div className="card__showDetail">
-                            {/* <a className="service__aTag"  href='www.google.com'>Show More</a>  */}
                         </div>
                     </div>
                     <div className="card__Middle"><h3 className="service__H3" >Web Development</h3></div>
@@ -32,7 +30,6 @@ export default function Services() {
                             <img className="card__Img" src={db_img} alt="" />
                         </div>
                         <div className="card__showDetail">
-                            {/* <a className="service__aTag"  href='www.google.com'>Show More</a>  */}
                         </div>
                     </div>
                     <div className="card__Middle"><h3 className="service__H3" >Database Services</h3></div>
@@ -44,27 +41,12 @@ export default function Services() {
                             <img className="card__Img" src={gfx_img} alt="" />
                         </div>
                         <div className="card__showDetail">
-                            {/* <a className="service__aTag"  href='www.google.com'>Show More</a>  */}
                         </div>
                     </div>
                     <div className="card__Middle"><h3 className="service__H3" >Graphics Designing</h3></div>
                     <div className="card__Botom"><p className="service__pTag" >We provide Graphics designing services like logo making, template designs and social media post templates etc. </p></div>
                 </div>
             </div>
-            {/* <div className="services__BottomDetails">
-                <div className="bottom__detailHolder">
-                    <div className="detail__Heading"><h1 className="service__H1">820</h1></div>
-                    <div className="detail__moreDetails"><h4>Satisfied</h4><h4>Client</h4></div>
-                </div>
-                <div className="bottom__detailHolder">
-                    <div className="detail__Heading"><h1 className="service__H1">820</h1></div>
-                    <div className="detail__moreDetails"><h4>Satisfied</h4><h4>Client</h4></div>
-                </div>
-                <div className="bottom__detailHolder">
-                    <div className="detail__Heading"><h1 className="service__H1">820</h1></div>
-                    <div className="detail__moreDetails"><h4>Satisfied</h4><h4>Client</h4></div>
-                </div>  
-            </div> */}
         </div>
     </>
   )

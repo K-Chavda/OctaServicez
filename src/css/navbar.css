@@ -55,6 +55,7 @@
 .navbar__LogoImg{
     height: 50px;
     width: 50px;
+    margin: auto;
 }
 
 .navbar__Signin{
@@ -118,11 +119,13 @@
     .navbar__UL{
         display: flex;
         list-style: none;
+        line-height: 70px;
     }
 
     .navbar__UL2{
         display: flex;
         list-style: none;
+        line-height: 70px;
     }
     
     .navbar__LI{
@@ -224,11 +227,13 @@
         display: block;
         text-align: center;
         width: max-content;
+        line-height: 70px;
         margin-left: auto;
     }
 
     .navbar__UL2{
         display: none;
+        line-height: 70px;
     }
 
     .navbar__LI>a{
