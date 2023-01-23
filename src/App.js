@@ -6,6 +6,7 @@ import Hero from './Component/Hero';
 import Contact from './Component/Contact';
 
 
+
   function App() {
   return (
     <>
